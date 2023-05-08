@@ -1,28 +1,40 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using UsuariosApp.Application.Interfaces;
+using UsuariosApp.Application.Models.Requests;
+using UsuariosApp.Application.Models.Responses;
 
-namespace UsuariosApp.Api.Controllers
+namespace UsuariosApp.Api.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+public class UsuariosController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UsuariosController : ControllerBase
-    {
-        /// <summary>
-        /// Autenticação de usuários
-        /// </summary>
-        [HttpPost("autenticar")]
-        public IActionResult Autenticar()
-        {
-            return Ok();
-        }
+    private readonly IUsuarioAppService? _usuarioAppService;
 
-        /// <summary>
-        /// Criação de usuários
-        /// </summary>
-        [HttpPost("criar-conta")]
-        public IActionResult CriarConta()
-        {
-            return Ok();
-        }
+    public UsuariosController(IUsuarioAppService? service)
+    {
+        _usuarioAppService = service;
+    }
+
+    /// <summary>
+    /// Autenticação de usuários
+    /// </summary>
+    [HttpPost]
+    [Route("autenticar")]
+    [ProducesResponseType(typeof(AutenticarResponseDTO), StatusCodes.Status200OK)]
+    public IActionResult Autenticar(AutenticarRequestDTO dto)
+    {
+        return Ok();
+    }
+
+    /// <summary>
+    /// Criação de usuários
+    /// </summary>
+    [HttpPost]
+    [Route("criar-conta")]
+    [ProducesResponseType(typeof(CriarContaResponseDTO), StatusCodes.Status201Created)]
+    public IActionResult CriarConta(CriarContaRequestDTO dto)
+    {
+        return Ok();
     }
 }
