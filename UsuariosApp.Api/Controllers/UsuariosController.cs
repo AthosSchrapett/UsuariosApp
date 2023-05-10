@@ -35,6 +35,6 @@ public class UsuariosController : ControllerBase
     [ProducesResponseType(typeof(CriarContaResponseDTO), StatusCodes.Status201Created)]
     public IActionResult CriarConta(CriarContaRequestDTO dto)
     {
-        return Ok();
+        return StatusCode(201, _usuarioAppService?.CriarConta(dto));
     }
 }

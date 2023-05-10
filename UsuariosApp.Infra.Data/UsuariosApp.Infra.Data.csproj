@@ -16,10 +16,4 @@
     <ProjectReference Include="..\UsuariosApp.Domain\UsuariosApp.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Configurations\" />
-    <Folder Include="Contexts\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>
