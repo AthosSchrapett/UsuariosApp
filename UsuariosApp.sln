@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsuariosApp.Domain", "Usuar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsuariosApp.Infra.Data", "UsuariosApp.Infra.Data\UsuariosApp.Infra.Data.csproj", "{556C5045-19D7-42B2-9F4F-8AE1621066A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsuariosApp.Tests", "UsuariosApp.Tests\UsuariosApp.Tests.csproj", "{7E0ABAB4-DB48-4BC6-8C39-EB553D67F632}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{556C5045-19D7-42B2-9F4F-8AE1621066A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{556C5045-19D7-42B2-9F4F-8AE1621066A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{556C5045-19D7-42B2-9F4F-8AE1621066A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E0ABAB4-DB48-4BC6-8C39-EB553D67F632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E0ABAB4-DB48-4BC6-8C39-EB553D67F632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E0ABAB4-DB48-4BC6-8C39-EB553D67F632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E0ABAB4-DB48-4BC6-8C39-EB553D67F632}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{8DB40905-5378-4B6E-B44C-EE154AFCAC05} = {FF305248-43B4-40D5-BDEF-3DCDE525B2A6}
 		{6827B6B1-E905-4462-A584-41349DCDB679} = {F96DC96E-3C44-43BB-BFBB-EA85AC5A6865}
 		{556C5045-19D7-42B2-9F4F-8AE1621066A1} = {10120D29-2010-46CC-AD56-8831D00BDEE4}
+		{7E0ABAB4-DB48-4BC6-8C39-EB553D67F632} = {89D7F188-70D3-4633-A93A-318F17DAC0E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1639FCFA-FF93-4CFC-AADF-48AE8FD2388D}
